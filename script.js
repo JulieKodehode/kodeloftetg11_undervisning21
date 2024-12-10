@@ -167,11 +167,35 @@ console.log(numbers);
 console.log("--- OPPGAVE 4: ---")
 
 const numbers = [1, 2, 3];
+console.log(numbers);
 
 const doubled = numbers.map((number) => number * 2);
 
 console.log(doubled);
-console.log(numbers);
+
+// Ekstra oppgave 2
+numbers.push(4);
+numbers.push(5);
+
+const trippled = numbers.map((number) => number * 3);
+console.log(trippled);
+
+const half = numbers.map((number) => number / 2);
+console.log(half);
+
+// Ekstra oppgave 3
+
+const fruity = ["Epler", "Pærer", "Bananer", "Mangoer"];
+console.log("Dette er array før map:");
+console.log(fruity);
+
+const salePitch = fruity.map((item) => {
+  let newSale = `${item} er på salg`
+  return newSale
+});
+
+console.log("Dette er array etter map:");
+console.log(salePitch)
 
 /*
 EKSTRA OPPGAVE:
